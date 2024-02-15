@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myTube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/mytube.css">
+    <link rel="icon" href="images/survey.png">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="images/Jane.jpg" alt="Jane">
+            <img src="images/Joe.jpg" alt="Joe">
+            <img src="images/Matt.jpg" alt="Matt">
+        </div>
+            <button class="prev" onclick="prevSlide()">&lt;</button>
+            <button class="next" onclick="nextSlide()">&gt;</button>
+    </div>
+    <!-- 
+            settings.json
+            .vscode/settings.json
+        
+        {
+     "terminal.integrated.cwd": "${workspaceFolder}"
+  } */
+  //to enable javascript.js to run automatically and set the default path to C:\Users\USER\Documents\VS code projects/JSscripts. with this now script.js will have a wrong path
+  //{
+  //"terminal.integrated.cwd": "${workspaceFolder}/JSscripts"
+//}-->
+
+<main>
+    <section class="position"><p class="page-heading" >section 1</p>
+       <p> <i class="fa-brands fa-facebook fb-icon" ></i></p>
+       <p> <i class="fa-brands fa-instagram ig-icon"></i></p>
+       <p> <i class="fa-brands fa-tiktok tiktok-icon"></i></p>
+    </section>
+    <section class="position"><p class="page-heading">section 2</p></section>
+    <section class="position"><p class="page-heading">section 3</p></section>
+</main>
+
+<article>
+    <input type="text" placeholder="Search pokemon" id="pokemonName">
+    <button id="getPokemon" onclick="fetchData()">Fetch pokemon</button>
+    <img src="" alt="Pokemon sprite" id="displayPokemon">
+</article>
+
+<script src="js/myTube.js"></script>
+</body>
+</html>

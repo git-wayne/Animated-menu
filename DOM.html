@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/DOM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <button id="start-button">START</button>
+    <section class="image-section"> 
+     <figure class="profile-picture-fig">
+        <img src="images/8k_image.jpg" alt="HD image" title="practice-image" width="690" height="360">
+        <figcaption class="offscreen">An 8k image</figcaption>
+     </figure>
+     <h1 class="h1">
+        <span class="nowrap">Hello 👋</span>
+        <span class="nowrap">Im Wayne</span>
+    </h1>
+    </section>
+
+    <section id="clock-container">
+        <div id="clock">00:00:00</div>
+    </section>
+    <article id="stopwatch-container">
+        <!--a comment-->
+        <h1 class="myH1">Stopwatch</h1>
+        <div id="inner-container">
+        <div id="display">
+            00:00:00:00
+        </div>
+        <div id="controls">
+            <button id="startBtn" onclick="start()">START</button>
+            <button id="stopBtn" onclick="stop()">STOP</button>
+            <button id="resetBtn" onclick="reset()">RESET</button>
+        </div>
+        </div>
+    </article>
+    <!-- Use an icon -->
+   <div><i class="fas fa-search icon"></i></div> 
+   <form action="" class="form">
+    <fieldset>
+        <legend> Name</legend>
+        <section class="infosection">
+        <input type="text" placeholder="Enter your name" id="namefield">
+        <button class="submit" type="button" onclick="displayName()">submit</button>
+    </section>
+    </fieldset>
+    </form>
+    <input type="text" id="displayname" readonly required>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>

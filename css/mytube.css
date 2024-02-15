@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+/* section{
+  width: 50%;
+} */
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img{
+  width: 300px;
+  height: auto;
+  display: none;
+}  
+img.displaySlide{
+  display: block;
+}
+.slider button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev{
+  left: 0;
+}
+.next{
+  right: 84.5%;
+}
+main{
+  position: relative;
+}
+.position:nth-child(1) {
+  background-color: hsl(194, 92%, 36%);
+}
+
+.position:nth-child(2) {
+  background-color: hsl(123, 65%, 54%);
+}
+
+.position:nth-child(3) {
+  background-color: hsl(303, 82%, 41%);
+  margin-bottom: 5rem;
+}
+
+.position {
+  height: 50vh;
+}
+.page-heading{
+  position: sticky;
+  top: 0;
+  background-color: goldenrod;
+}
+.fb-icon{
+  position: fixed;
+  top: 45%;
+}
+.ig-icon{
+  position: fixed;
+  top: 50%;
+}
+.tiktok-icon{
+  position: fixed;
+  top: 55%;
+}
+i{
+  font-size: 2rem;
+  z-index: 1;
+}
+i:hover{
+  cursor: pointer;
+}
+#displayPokemon{
+  display: none;
+}
